@@ -1,26 +1,20 @@
-Certainly! Here's the compiled `README.md` file for your Xylophone Flutter application:
 
-```markdown
 # Xylophone
 
 Xylophone is a simple Flutter application that simulates a musical xylophone. Users can play different notes by tapping on colored bars.
 
 ## Features
 
-- Eight colored bars representing different musical notes.
+- Seven colored bars representing different musical notes.
 - Play the corresponding sound for each note when a bar is tapped.
 
-## Screenshots
-
-![Screenshot](screenshot.png)
 
 ## Getting Started
 
 ### Prerequisites
 
-- [Flutter](https://flutter.dev/docs/get-started/install) (latest stable version recommended)
-- A code editor (such as [Visual Studio Code](https://code.visualstudio.com/) or [Android Studio](https://developer.android.com/studio))
-
+- Flutter SDK (latest stable version recommended)
+- A code editor such as Visual Studio Code or Android Studio
 ### Installation
 
 1. Clone the repository:
@@ -75,71 +69,6 @@ xylophone/
 - Launch the app on an emulator or physical device.
 - Tap on the colored bars to play different musical notes.
 
-## Example Code
-
-Here is the main Dart file (`lib/main.dart`) for the app:
-
-```dart
-import 'package:flutter/material.dart';
-import 'package:audioplayers/audioplayers.dart';
-
-void main() {
-  runApp(XylophoneApp());
-}
-
-class XylophoneApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Xylophone(),
-    );
-  }
-}
-
-class Xylophone extends StatelessWidget {
-  final player = AudioPlayer();
-
-  void playSound(int soundNumber) {
-    player.play(AssetSource('note$soundNumber.wav'));
-  }
-
-  Expanded buildKey({Color color, int soundNumber}) {
-    return Expanded(
-      child: TextButton(
-        style: TextButton.styleFrom(
-          backgroundColor: color,
-        ),
-        onPressed: () {
-          playSound(soundNumber);
-        },
-        child: Container(),
-      ),
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.black,
-      body: SafeArea(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            buildKey(color: Colors.red, soundNumber: 1),
-            buildKey(color: Colors.orange, soundNumber: 2),
-            buildKey(color: Colors.yellow, soundNumber: 3),
-            buildKey(color: Colors.green, soundNumber: 4),
-            buildKey(color: Colors.teal, soundNumber: 5),
-            buildKey(color: Colors.blue, soundNumber: 6),
-            buildKey(color: Colors.purple, soundNumber: 7),
-            buildKey(color: Colors.pink, soundNumber: 8),
-          ],
-        ),
-      ),
-    );
-  }
-}
-```
 
 ## Assets
 
