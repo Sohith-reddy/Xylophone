@@ -1,7 +1,7 @@
 
 # Xylophone
 
-Xylophone is a simple Flutter application that simulates a musical xylophone. Users can play different notes by tapping on colored bars.
+Xylophone is a simple Flutter application that simulates a musical xylophone . Users can play different notes by tapping on colored bars.
 
 ## Features
 
@@ -14,13 +14,13 @@ Xylophone is a simple Flutter application that simulates a musical xylophone. Us
 ### Prerequisites
 
 - Flutter SDK (latest stable version recommended)
-- A code editor such as Visual Studio Code or Android Studio
+- A code editor such as Visual Studio Code or Android Studio for executing this application.
 ### Installation
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/xylophone.git
+   git clone https://github.com/Sohith-reddy/Xylophone.git
    cd xylophone
    ```
 
@@ -89,14 +89,9 @@ flutter:
 
 ## Contributing
 
-Contributions are welcome! Please fork this repository and submit a pull request for any feature requests, bug fixes, or enhancements.
+Contributions are always welcome! Please fork this repository and submit a pull request for any feature requests, bug fixes, or enhancements.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ```
-
-### Notes:
-- Replace `https://github.com/yourusername/xylophone.git` with your actual GitHub repository URL.
-- Make sure to include an actual screenshot (`screenshot.png`) in the repository to show a preview of the app.
-- Ensure `assets/note1.wav` to `assets/note8.wav` exist in the correct directory and are referenced correctly in `pubspec.yaml`.
